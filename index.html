@@ -1,193 +1,178 @@
 <!DOCTYPE html>
-<html>
-<title>Kapil Singhal</title>
-<link rel="icon" type="image/x-icon" href="https://img.icons8.com/ios/50/000000/resume.png" />
-<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
-<body class="w3-light-grey">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kapil Singhal</title>
+  <link rel="icon" href="https://img.icons8.com/ios/50/000000/resume.png" type="image/x-icon">
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-    <!-- Right Column -->
-    <div class="w3-twothird">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
-        <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <div class="w3-left w3-third">
-              <br>
-              <div class="w3-display-container">
-                <img src="Profile.jpeg" style="width:100%" alt="Avatar">
-              </div>
-              <br>
-            </div>
-            <div class="w3-rest" style="padding-left:4em">
-              <center>
-                <h2 class="w3-text-grey w3-padding-16"><i class="w3-margin-right w3-xxlarge w3-text-teal"></i>Kapil Singhal</h2>
-              </center>
-              <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Developer</p>
-              <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Noida, Uttar Pradesh</p>
-              <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>kapilsinghal777@mail.com</p>
-              <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+91 7830309067</p>
-            </div>
-        </div>
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-bullseye fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Career Summary</h2>
-        <div class="w3-container">
-          <h6>To secure a position as a software developer to capitalize on the tremendous knowledge on product development and designing perfect end-to-end software solutions.</h6>
-        </div>
-      </div>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Trainee</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2019 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <h6>Working as a Devops Engineer</h6 >
-        </div>
-      </div>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .profile-img {
+      border-radius: 50%;
+      max-width: 180px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    }
+    .section-title {
+      border-left: 5px solid teal;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .tag {
+      display: inline-block;
+      background: teal;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin: 4px 4px 0 0;
+      font-size: 0.9rem;
+    }
+    footer {
+      background: teal;
+      color: white;
+      padding: 20px 0;
+    }
+    footer a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.3rem;
+    }
+    footer a:hover {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
 
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-file-code-o fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Machine reading of Railway Feedback</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-gear fa-fw w3-margin-right"></i>
-              <span class="w3-tag w3-teal w3-round">Python</span>
-              <span class="w3-tag w3-teal w3-round">Django</span>
-              <span class="w3-tag w3-teal w3-round">Machine Learning</span>
-              <span class="w3-tag w3-teal w3-round">HTML</span>
-          </h6>
-          <h6>This web app can be used to serve the analysis of railway feedback and enhance the quality of service with respect to passengers.</h6 >
-          <a href="https://github.com/kapil777/Railway-Feedback" target="_blank" class="w3-button w3-teal w3-round">Project Link</a>
-        </div>
-        <hr>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Enigma Programming Club Website</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-gear fa-fw w3-margin-right"></i>
-              <span class="w3-tag w3-teal w3-round">Python</span>
-              <span class="w3-tag w3-teal w3-round">Django</span>
-              <span class="w3-tag w3-teal w3-round">HTML</span>
-          </h6>
-          <h6>Provides announcements, reminders, programming contests, pollings and information about Enigma Programming Club.</h6>
-          <a href="https://enigmaabes.herokuapp.com/club/" target="_blank" class="w3-button w3-teal w3-round">Project Link</a>
-        </div>
-        <hr>
+<!-- Header -->
+<section class="container text-center py-5">
+  <img src="Profile.jpeg" alt="Kapil Singhal" class="profile-img mb-3">
+  <h1 class="fw-bold">Kapil Singhal</h1>
+  <p class="text-muted">Software Developer</p>
+  <p>
+    <i class="fa fa-home text-teal"></i> Irvine, California, USA<br>
+    <i class="fa fa-envelope text-teal"></i> kapilsinghal777@mail.com<br>
+    <i class="fa fa-phone text-teal"></i> +91 7830309067
+  </p>
+</section>
 
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>ABES-EC Timetable (Webpage)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-gear fa-fw w3-margin-right"></i>
-            <span class="w3-tag w3-teal w3-round">Python</span>
-            <span class="w3-tag w3-teal w3-round">Django</span>
-            <span class="w3-tag w3-teal w3-round">HTML</span>
-          </h6>
-          <h6>The aim of this project is to create Software for college and the purpose is to maintain the “TIME TABLE GENERATION” for both the students and staff.</h6 >
-          <a href="https://abesectimetable.herokuapp.com/" target="_blank" class="w3-button w3-teal w3-round">Project Link</a>
-        </div>
-        <hr>
-
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Automatic Light Controller</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-gear fa-fw w3-margin-right"></i>
-              <span class="w3-tag w3-teal w3-round">Aurduino Board</span>
-              <span class="w3-tag w3-teal w3-round">IR Sensor</span>
-          </h6>
-          <h6>Automatically control the lights on entry and exit of the person using IR sensor.</h6 >
-        </div>
-      </div>
-    <!-- End Right Column -->
-    </div>
+<!-- Main Content -->
+<div class="container my-4">
+  <div class="row g-4">
     <!-- Left Column -->
-    <div class="w3-third">
-        <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <div class="w3-container">
-            <h2 class="w3-large"><b><i class="fa fa-link fa-fw w3-margin-right w3-text-teal"></i>Links<b></h2>
-            <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://github.com/kapil777" target="_blank" class="w3-button w3-teal w3-round">GitHub </a></p>
-            <p><i class="fab fa-hackerrank fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://www.hackerrank.com/kapil777?hr_r=1" target="_blank" class="w3-button w3-teal w3-round">Hackerrank</a></p>
-            <p><img src="codechef_logo.png" alt="CodeChef" style="width:12%;"/><i class ="w3-margin-right w3-large w3-text-teal"></i><a href="https://www.codechef.com/users/kapil777" target="_blank" class="w3-button w3-teal w3-round">Codechef</a></p>
-          </div>
-        </div>
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <div class="w3-display-container">
-          <p class="w3-large"><b><i class="fa fa-certificate fa-fw w3-margin-right w3-text-teal"></i>Education<b></p>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>B.Tech in Computer Science & Engineering</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2019</h6>
-            <h6 class="w3-text-teal"><i class="fa fa-percent fa-fw w3-margin-right"></i>73.18</h6>
-            <h6 class="w3-text-teal"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>ABES Engineering College, Ghaziabad</h6>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Senior Secondary Education</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 - 2013</h6>
-            <h6 class="w3-text-teal"><i class="fa fa-percent fa-fw w3-margin-right"></i>73.4</h6>
-            <h6 class="w3-text-teal"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>SMT. Shanti Devi Vidya Mandir, Kiraoli, Agra</h6>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-opacity"><b>Secondary Education</b></h5>
-            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2011</h6>
-            <h6 class="w3-text-teal"><i class="fa fa-percent fa-fw w3-margin-right"></i>70.18</h6>
-            <h6 class="w3-text-teal"><i class="fa fa-graduation-cap fa-fw w3-margin-right"></i>SMT. Shanti Devi Vidya Mandir, Kiraoli, Agra</h6>
-          </div>
-        </div>
-      </div>
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <div class="w3-display-container">
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <span class="w3-tag w3-teal w3-round">C/C++</span>
-          <span class="w3-tag w3-teal w3-round">Python</span>
-          <span class="w3-tag w3-teal w3-round">Data Structure</span><br><br>
-          <span class="w3-tag w3-teal w3-round">Django</span>
-          <span class="w3-tag w3-teal w3-round">HTML</span>
-          <span class="w3-tag w3-teal w3-round">CSS</span>
-          <span class="w3-tag w3-teal w3-round">SQL</span>
-          <br><br>
-        </div>
-      </div>
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <div class="w3-display-container">
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <span class="w3-tag w3-teal w3-round">Hindi</span>
-          <span class="w3-tag w3-teal w3-round">English</span>
-          <br><br>
-        </div>
-      </div>
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <div class="w3-display-container">
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-address-card fa-fw w3-margin-right w3-text-teal"></i>Personal Details</b></p>
-          <h6 class="w3-text-teal"><i class="w3-margin-right"></i><b class = "w3-text-black">Father's Name - </b>Mr. Dinesh Chand</h6>
-          <h6 class="w3-text-teal"><i class="w3-margin-right"></i><b class = "w3-text-black">DOB - </b>10 May, 1996</h6>
-          <h6 class="w3-text-teal"><i class="w3-margin-right"></i><b class = "w3-text-black">Permanent Address - </b>Hs no. 32/k, Painthgali – 4, Kiraoli, Agra, UP-283122</h6>
-          <h6 class="w3-text-teal"><i class="w3-margin-right"></i><b class = "w3-text-black">Current Address - </b>Flat no. 104, Tower – D1, Supertech Livingstone, Crossing Republik, Ghaziabad – 201009</h6>
-          <br><br>
-        </div>
+    <div class="col-lg-4">
+
+      <!-- Links -->
+      <div class="card shadow-sm p-3">
+        <h4 class="section-title"><i class="fa fa-link"></i> Links</h4>
+        <p><i class="fa-brands fa-github"></i> <a href="https://github.com/kapil777" target="_blank">GitHub</a></p>
+        <p><i class="fab fa-hackerrank"></i> <a href="https://www.hackerrank.com/kapil777" target="_blank">Hackerrank</a></p>
+        <p><img src="codechef_logo.png" style="width:20px;"> <a href="https://www.codechef.com/users/kapil777" target="_blank">CodeChef</a></p>
       </div>
 
-    <!-- End Left Column -->
+      <!-- Education -->
+      <div class="card shadow-sm p-3 mt-4">
+        <h4 class="section-title"><i class="fa fa-graduation-cap"></i> Education</h4>
+        <p><b>B.Tech in CSE</b><br>ABES Engineering College, Ghaziabad<br><small>2015 - 2019 | 73.18%</small></p>
+        <hr>
+        <p><b>Senior Secondary</b><br>SMT. Shanti Devi Vidya Mandir<br><small>2012 - 2013 | 73.4%</small></p>
+        <hr>
+        <p><b>Secondary</b><br>SMT. Shanti Devi Vidya Mandir<br><small>2010 - 2011 | 70.18%</small></p>
+      </div>
+
+      <!-- Skills -->
+      <div class="card shadow-sm p-3 mt-4">
+        <h4 class="section-title"><i class="fa fa-asterisk"></i> Skills</h4>
+        <span class="tag">C/C++</span>
+        <span class="tag">Python</span>
+        <span class="tag">Django</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">SQL</span>
+      </div>
+
+      <!-- Languages -->
+      <div class="card shadow-sm p-3 mt-4">
+        <h4 class="section-title"><i class="fa fa-language"></i> Languages</h4>
+        <span class="tag">Hindi</span>
+        <span class="tag">English</span>
+      </div>
+
     </div>
 
-  <!-- End Grid -->
-  </div>
+    <!-- Right Column -->
+    <div class="col-lg-8">
 
-  <!-- End Page Container -->
+      <!-- Career Summary -->
+      <div class="card shadow-sm p-4">
+        <h4 class="section-title"><i class="fa fa-bullseye"></i> Career Summary</h4>
+        <p>To secure a position as a software developer to capitalize on my knowledge of product development and delivering end-to-end software solutions.</p>
+      </div>
+
+      <!-- Work Experience -->
+      <div class="card shadow-sm p-4 mt-4">
+        <h4 class="section-title"><i class="fa fa-suitcase"></i> Work Experience</h4>
+        <p><b>Trainee (DevOps Engineer)</b><br><small>Jan 2019 - Present</small></p>
+      </div>
+
+      <!-- Projects -->
+      <div class="card shadow-sm p-4 mt-4">
+        <h4 class="section-title"><i class="fa fa-code"></i> Projects</h4>
+
+        <p><b>Machine Reading of Railway Feedback</b><br>
+          <span class="tag">Python</span> <span class="tag">Django</span> <span class="tag">ML</span> <span class="tag">HTML</span><br>
+          Web app to analyze railway feedback and improve passenger service quality.<br>
+          <a href="https://github.com/kapil777/Railway-Feedback" target="_blank" class="btn btn-sm btn-outline-primary mt-2">Project Link</a>
+        </p>
+        <hr>
+
+        <p><b>Enigma Programming Club Website</b><br>
+          <span class="tag">Python</span> <span class="tag">Django</span> <span class="tag">HTML</span><br>
+          Platform for contests, announcements, and polls.<br>
+          <a href="https://enigmaabes.herokuapp.com/club/" target="_blank" class="btn btn-sm btn-outline-primary mt-2">Project Link</a>
+        </p>
+        <hr>
+
+        <p><b>ABES-EC Timetable</b><br>
+          <span class="tag">Python</span> <span class="tag">Django</span> <span class="tag">HTML</span><br>
+          Automated timetable generation for students & staff.<br>
+          <a href="https://abesectimetable.herokuapp.com/" target="_blank" class="btn btn-sm btn-outline-primary mt-2">Project Link</a>
+        </p>
+        <hr>
+
+        <p><b>Automatic Light Controller</b><br>
+          <span class="tag">Arduino</span> <span class="tag">IR Sensor</span><br>
+          Automatic lights on entry/exit using IR sensors.
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <a href="https://www.facebook.com/skapil777" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-  <a href="https://www.instagram.com/kappu_singhal/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-  <a href="https://twitter.com/kapilsinghal777" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-  <a href="https://www.linkedin.com/in/kapil777/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  <p>Powered by Kapil Singhal</a></p>
+<!-- Footer -->
+<footer class="text-center">
+  <p>Find me on social media:</p>
+  <a href="https://www.facebook.com/skapil777" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://www.instagram.com/kappu_singhal/" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://twitter.com/kapilsinghal777" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.linkedin.com/in/kapil777/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <p class="mt-2">© 2025 Kapil Singhal</p>
 </footer>
 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
